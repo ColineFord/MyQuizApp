@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <resources>
+        <dimen name="Header_height">70dp</dimen>
+        <dimen name="Notes_width">50dp</dimen>
+
+        <dimen name="Name_MarginLeft">20dp</dimen>
+        <dimen name="Name_MarginRight">20dp</dimen>
+        <dimen name="Name_MarginTop">20dp</dimen>
+
+        <dimen name="QMarginLeft">20dp</dimen>
+        <dimen name="QMarginBottom">10dp</dimen>
+
+        <dimen name="Button_Padding">20dp</dimen>
+        <dimen name="Button_Margin">15dp</dimen>
+
+        <dimen name="Linear_Padding">10dp</dimen>
+
+        <dimen name="Hint_Padding">10dp</dimen>
+
+    </resources>

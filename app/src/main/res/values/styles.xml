@@ -1,0 +1,56 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#00BCD4</item>
+        <item name="colorPrimaryDark">#B2EBF2</item>
+        <item name="colorAccent">#FFEB3B</item>
+    </style>
+
+    <style name="Header_Text">
+        <!-- Style for Title text in the header. -->
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">casual</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="Name_Field">
+        <!-- Style for Name Field -->
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:inputType">textCapWords</item>
+    </style>
+
+    <style name="QuestionHeaderStyle">
+        <!--Style for Question Headers. -->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#0288D1</item>
+        <item name="android:background">#B2EBF2</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="QuestionStyle">
+        <!--Style for Question Headers. -->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#303F9F</item>
+        <item name="android:background">#B2EBF2</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="LinearStyle">
+        <!--Style for Question Headers. -->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+    </style>
+
+</resources>

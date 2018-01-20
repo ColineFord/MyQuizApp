@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">MusicTriviaQuiz</string>
+
+    <string name="MTQ">MUSIC TRIVIA QUIZ</string>
+
+    <string name="Despacito" translatable="false">Despacito</string>
+    <string name="Shape" translatable="false">Shape Of You</string>
+    <string name="Rockabye" translatable="false">Rockabye</string>
+    <string name="Human" translatable="false">Human</string>
+
+    <string name="Beatles" translatable="false">The Beatles</string>
+    <string name="Queen" translatable="false">Queen</string>
+    <string name="U2" translatable="false">U2</string>
+    <string name="Panic" translatable="false">Panic! At The Disco</string>
+
+    <string name="Gangnam" translatable="false">Gangnam Style</string>
+    <string name="SeeYou" translatable="false">See You Again</string>
+
+    <string name="Plus" translatable="false">+ Plus</string>
+    <string name="Minus" translatable="false">− Minus</string>
+    <string name="Divide" translatable="false">÷ Divide</string>
+    <string name="Multiply" translatable="false">× Multiply</string>
+
+    <string name="Swift" translatable="false">Taylor Swift</string>
+    <string name="Bocelli" translatable="false">Andrea Bocelli</string>
+    <string name="Beyonce" translatable="false">Beyonce</string>
+    <string name="Eminem" translatable="false">Eminem</string>
+
+    <string name="DaftPunk" translatable="false">Daft Punk</string>
+    <string name="Drake" translatable="false">Drake</string>
+    <string name="Weeknd" translatable="false">The Weeknd</string>
+    <string name="Kendrick" translatable="false">Kendrick Lamar</string>
+
+    <string name="Hint">Hint: there\'s a second answer...</string>
+    <string name="Hint2">Hint: 2 answers...</string>
+
+    <string name="Bonus" translatable="false">Bonus +1</string>
+
+    <string name="Name_Field_hint">Enter your name here</string>
+
+    <string name="Q1">Question 1:</string>
+    <string name="Q1text">What is the most streamed song of 2017?</string>
+
+    <string name="Q2">Question 2:</string>
+    <string name="Q2text">Who has sang Bohemian Rhapsody?</string>
+
+    <string name="Q3">Question 3:</string>
+    <string name="Q3text">What is the most viewed video on Youtube right now?</string>
+
+    <string name="Q4">Question 4:</string>
+    <string name="Q4text">What instrument did Louis Armstrong play?</string>
+    <string name="Q4Edit_Text_hint">Your answer here</string>
+
+    <string name="Q5">Question 5:</string>
+    <string name="Q5text">What is the name of Ed Sheeran\'s last album?</string>
+
+    <string name="Q6">Question 6:</string>
+    <string name="Q6text">Who did Ed Sheeran do a version of \'Perfect\' with?</string>
+
+    <string name="Q7">Question 7:</string>
+    <string name="Q7text">Which ex member of 1D sings \'Dusk Till Dawn\' with SIA?</string>
+
+    <string name="Q8">Question 8:</string>
+    <string name="Q8text">Which singer and group sings \'I Feel It Coming\' and \'Starboy\' together?</string>
+
+    <string name="Submit">Submit Answers</string>
+
+</resources>
