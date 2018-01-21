@@ -267,12 +267,13 @@ public class MainActivity extends AppCompatActivity {
             checkAllQuestions();
 
             if (correctAnswers == 11) {
-                Toast.makeText(MainActivity.this, "YOU WON! " + getUsernameUserInput() + ", you have " + correctAnswers + " correct answers out of 11!",
+                String YouWon = getString(R.string.YouWonToast, getUsernameUserInput(), correctAnswers);
+                Toast.makeText(MainActivity.this, YouWon,
                         Toast.LENGTH_LONG).show();
                 resetCounterCorrectAnswers();
             } else {
-
-                Toast.makeText(MainActivity.this, "TRY AGAIN! " + getUsernameUserInput() + ", you have " + correctAnswers + " correct answers out of 11!",
+                String TryAgain = getString(R.string.TryAgainToast, getUsernameUserInput(), correctAnswers);
+                Toast.makeText(MainActivity.this, TryAgain,
                         Toast.LENGTH_LONG).show();
                 resetCounterCorrectAnswers();
             }
