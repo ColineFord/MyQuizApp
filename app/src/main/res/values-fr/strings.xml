@@ -34,6 +34,9 @@
     <string name="Q8">Question 8 :</string>
     <string name="Q8text">Quel chanteur et groupe chantent \'I Feel It Coming\' et \'Starboy\' ensemble?</string>
 
+    <string name="YouWonToast">Gagné! %1$s, tu as %2$d bonnes réponses sur 11!</string>
+    <string name="TryAgainToast">Essaye encore! %1$s, tu n\'as que %2$d bonnes réponses sur 11!</string>
+
     <string name="Submit">Envoyer mes réponses</string>
 
 </resources>
