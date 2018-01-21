@@ -16,5 +16,6 @@
         <dimen name="Linear_Padding">10dp</dimen>
 
         <dimen name="Hint_Padding">10dp</dimen>
+        <dimen name="AMargin">25dp</dimen>
 
     </resources>

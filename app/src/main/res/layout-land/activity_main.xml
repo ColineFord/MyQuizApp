@@ -52,14 +52,16 @@
                 style="@style/Name_Field"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/Name_Field_hint" />
+                android:hint="@string/Name_Field_hint"
+                android:gravity="center_horizontal"/>
 
             <LinearLayout
                 style="@style/LinearStyle"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="@dimen/Linear_Padding">
+                android:padding="@dimen/Linear_Padding"
+                android:gravity="center_horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -81,33 +83,38 @@
 
                     <RadioGroup
                         android:id="@+id/radioGroupQ1"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:gravity="center_horizontal">
 
                         <RadioButton
                             android:id="@+id/desp_stream"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/Despacito" />
+                            android:text="@string/Despacito"
+                            android:layout_marginRight="@dimen/AMargin"/>
 
                         <RadioButton
                             android:id="@+id/shape_stream"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/Shape" />
+                            android:text="@string/Shape"
+                            android:layout_marginRight="@dimen/AMargin"/>
 
                         <RadioButton
                             android:id="@+id/rock_stream"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/Rockabye" />
+                            android:text="@string/Rockabye"
+                            android:layout_marginRight="@dimen/AMargin"/>
 
                         <RadioButton
                             android:id="@+id/human_stream"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/Human" />
+                            android:text="@string/Human"
+                            android:layout_marginRight="@dimen/AMargin"/>
 
                     </RadioGroup>
                 </LinearLayout>
@@ -117,11 +124,12 @@
 
             <LinearLayout
                 style="@style/LinearStyle"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/QMarginLeft"
                 android:orientation="vertical"
-                android:padding="@dimen/Linear_Padding">
+                android:padding="@dimen/Linear_Padding"
+                android:gravity="center_horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -144,33 +152,38 @@
                     android:textColor="@color/hintLightBlue" />
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
 
                     <CheckBox
                         android:id="@+id/beatles_bohemian"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/Beatles" />
+                        android:text="@string/Beatles"
+                        android:layout_marginRight="@dimen/AMargin"/>
 
                     <CheckBox
                         android:id="@+id/queen_bohemian"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/Queen" />
+                        android:text="@string/Queen"
+                        android:layout_marginRight="@dimen/AMargin"/>
 
                     <CheckBox
                         android:id="@+id/u2_bohemian"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/U2" />
+                        android:text="@string/U2"
+                        android:layout_marginRight="@dimen/AMargin"/>
 
                     <CheckBox
                         android:id="@+id/panic_bohemian"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:onClick="onCheckboxPanicClicked"
-                        android:text="@string/Panic" />
+                        android:text="@string/Panic"
+                        android:layout_marginRight="@dimen/AMargin"/>
 
                 </LinearLayout>
 
@@ -179,11 +192,12 @@
 
             <LinearLayout
                 style="@style/LinearStyle"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/QMarginLeft"
                 android:orientation="vertical"
-                android:padding="@dimen/Linear_Padding">
+                android:padding="@dimen/Linear_Padding"
+                android:gravity="center_horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -206,33 +220,38 @@
 
                     <RadioGroup
                         android:id="@+id/radioGroupQ3"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:gravity="center_horizontal">
 
                         <RadioButton
                             android:id="@+id/shape_youtube"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/Shape" />
+                            android:text="@string/Shape"
+                            android:layout_marginRight="@dimen/AMargin"/>
 
                         <RadioButton
                             android:id="@+id/gangnam_youtube"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/Gangnam" />
+                            android:text="@string/Gangnam"
+                            android:layout_marginRight="@dimen/AMargin"/>
 
                         <RadioButton
                             android:id="@+id/desp_youtube"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/Despacito" />
+                            android:text="@string/Despacito"
+                            android:layout_marginRight="@dimen/AMargin"/>
 
                         <RadioButton
                             android:id="@+id/seeyou_youtube"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/SeeYou" />
+                            android:text="@string/SeeYou"
+                            android:layout_marginRight="@dimen/AMargin"/>
 
                     </RadioGroup>
 
@@ -243,11 +262,12 @@
 
             <LinearLayout
                 style="@style/LinearStyle"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/QMarginLeft"
                 android:orientation="vertical"
-                android:padding="@dimen/Linear_Padding">
+                android:padding="@dimen/Linear_Padding"
+                android:gravity="center_horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -266,18 +286,20 @@
                     android:id="@+id/Trumpet"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/Q4Edit_Text_hint" />
+                    android:hint="@string/Q4Edit_Text_hint"
+                    android:gravity="center_horizontal"/>
 
             </LinearLayout>
 
 
             <LinearLayout
                 style="@style/LinearStyle"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/QMarginLeft"
                 android:orientation="vertical"
-                android:padding="@dimen/Linear_Padding">
+                android:padding="@dimen/Linear_Padding"
+                android:gravity="center_horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -294,33 +316,38 @@
 
                 <RadioGroup
                     android:id="@+id/radioGroupQ5"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
 
                     <RadioButton
                         android:id="@+id/plus_sheeran"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/Plus" />
+                        android:text="@string/Plus"
+                        android:layout_marginRight="@dimen/AMargin"/>
 
                     <RadioButton
                         android:id="@+id/minus_sheeran"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/Minus" />
+                        android:text="@string/Minus"
+                        android:layout_marginRight="@dimen/AMargin"/>
 
                     <RadioButton
                         android:id="@+id/divide_sheeran"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/Divide" />
+                        android:text="@string/Divide"
+                        android:layout_marginRight="@dimen/AMargin"/>
 
                     <RadioButton
                         android:id="@+id/multiply_sheeran"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/Multiply" />
+                        android:text="@string/Multiply"
+                        android:layout_marginRight="@dimen/AMargin"/>
 
                 </RadioGroup>
 
@@ -328,11 +355,12 @@
 
             <LinearLayout
                 style="@style/LinearStyle"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/QMarginLeft"
                 android:orientation="vertical"
-                android:padding="@dimen/Linear_Padding">
+                android:padding="@dimen/Linear_Padding"
+                android:gravity="center_horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -355,32 +383,37 @@
                     android:textColor="@color/hintLightBlue" />
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
 
                 <CheckBox
                     android:id="@+id/perfect_taylor"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/Swift" />
+                    android:text="@string/Swift"
+                    android:layout_marginRight="@dimen/AMargin"/>
 
                 <CheckBox
                     android:id="@+id/perfect_bocelli"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/Bocelli" />
+                    android:text="@string/Bocelli"
+                    android:layout_marginRight="@dimen/AMargin"/>
 
                 <CheckBox
                     android:id="@+id/perfect_beyonce"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/Beyonce" />
+                    android:text="@string/Beyonce"
+                    android:layout_marginRight="@dimen/AMargin"/>
 
                 <CheckBox
                     android:id="@+id/perfect_eminem"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/Eminem" />
+                    android:text="@string/Eminem"
+                    android:layout_marginRight="@dimen/AMargin"/>
 
                 </LinearLayout>
 
@@ -388,11 +421,12 @@
 
             <LinearLayout
                 style="@style/LinearStyle"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/QMarginLeft"
                 android:orientation="vertical"
-                android:padding="@dimen/Linear_Padding">
+                android:padding="@dimen/Linear_Padding"
+                android:gravity="center_horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -412,7 +446,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/Q4Edit_Text_hint"
-                    android:inputType="textCapWords" />
+                    android:inputType="textCapWords"
+                    android:gravity="center_horizontal"/>
 
             </LinearLayout>
 
@@ -422,7 +457,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/QMarginLeft"
                 android:orientation="vertical"
-                android:padding="@dimen/Linear_Padding">
+                android:padding="@dimen/Linear_Padding"
+                android:gravity="center_horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -446,30 +482,36 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
                 <CheckBox
                     android:id="@+id/daft_starboy"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/DaftPunk" />
+                    android:text="@string/DaftPunk"
+                    android:layout_marginRight="@dimen/AMargin"/>
 
                 <CheckBox
                     android:id="@+id/drake_starboy"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/Drake" />
+                    android:text="@string/Drake"
+                    android:layout_marginRight="@dimen/AMargin"/>
 
                 <CheckBox
                     android:id="@+id/weeknd_starboy"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/Weeknd" />
+                    android:text="@string/Weeknd"
+                    android:layout_marginRight="@dimen/AMargin"/>
 
                 <CheckBox
                     android:id="@+id/kendrick_starboy"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/Kendrick" />
+                    android:text="@string/Kendrick"
+                    android:layout_marginRight="@dimen/AMargin"/>
 
                 </LinearLayout>
 
