@@ -259,7 +259,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/Q4Edit_Text_hint"
-                    android:inputType="textCapWords" />
+                    android:inputType="textCapWords"
+                    android:layout_marginRight="@dimen/QMarginRight"/>
 
             </LinearLayout>
 
