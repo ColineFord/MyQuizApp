@@ -1,11 +1,15 @@
 package com.example.android.myquizapp;
 
+import android.content.Context;
 import android.content.res.Configuration;
 import android.graphics.drawable.shapes.Shape;
 import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MotionEvent;
 import android.view.View;
+import android.view.WindowManager;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -25,10 +29,27 @@ public class MainActivity extends AppCompatActivity {
     Button submit;
     int correctAnswers = 0;
 
+    /**
+     * This method hides the text input when you touch the screen outside of it
+     */
+    @Override
+    public boolean dispatchTouchEvent(MotionEvent ev) {
+        if (getCurrentFocus() != null) {
+            InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+            imm.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
+        }
+        return super.dispatchTouchEvent(ev);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        /**
+         * This line stops the text input from opening when the app starts
+         */
+        this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
 
         submit = findViewById(R.id.submitButton);
         submit.setOnClickListener(submitButtonOnClickListener);
