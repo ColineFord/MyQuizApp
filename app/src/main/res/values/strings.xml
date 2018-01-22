@@ -69,5 +69,6 @@
     <string name="TryAgainToast">TRY AGAIN! %1$s, you have %2$d correct answers out of 11!</string>
 
     <string name="HintButton">Hint</string>
+    <string name="PanicFact">Fun Fact: Panic! At The Disco did a version of the Queen song for the movie Suicide Squad</string>
 
 </resources>

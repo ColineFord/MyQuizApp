@@ -39,4 +39,8 @@
     <string name="YouWonToast">Ganaste! %1$s, tienes %2$d respuestas correctas de 11!</string>
     <string name="TryAgainToast">Inténtalo de nuevo! %1$s, tienes %2$d respuestas correctas de 11!</string>
 
+    <string name="HintButton">Indicio</string>
+
+    <string name="PanicFact">Fun Fact: Panic! At The Disco hizo una versión de la canción de Queen para la película Suicide Squad</string>
+
 </resources>

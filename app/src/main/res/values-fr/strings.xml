@@ -39,4 +39,8 @@
 
     <string name="Submit">Envoyer mes réponses</string>
 
+    <string name="HintButton">Indice</string>
+
+    <string name="PanicFact">Fun Fact: Panic! At The Disco a fait une version de la chanson pour le film Suicide Squad</string>
+
 </resources>

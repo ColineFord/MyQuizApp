@@ -9,6 +9,7 @@ import android.net.Uri;
 import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.WindowManager;
@@ -95,7 +96,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         final MediaPlayer Q2panicMP = MediaPlayer.create(this, R.raw.q2hintmusicpanic);
         final MediaPlayer Q3MP = MediaPlayer.create(this, R.raw.q3hintmusic);
         final MediaPlayer Q4MP = MediaPlayer.create(this, R.raw.q4hintmusic);
-        ImageView Q5hint  = findViewById(R.id.Hint_Q5image);
+        ImageView Q5hint = findViewById(R.id.Hint_Q5image);
         final MediaPlayer Q6BeyonceMP = MediaPlayer.create(this, R.raw.q6hintbeyonce);
         final MediaPlayer Q6BocelliMP = MediaPlayer.create(this, R.raw.q6hintbocelli);
         final MediaPlayer Q7MP = MediaPlayer.create(this, R.raw.q7hintmusic);
@@ -188,13 +189,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     /**
-     * This method makes a "Bonus + 1" Toast message pop up if the player selects the bonus answer
+     * This method makes a Fun Fact Toast message about Panic! At The Disco and a
+     * "Bonus + 1" Toast message pop up if the player selects the bonus answer
      */
     public void onCheckboxPanicClicked(View view) {
         boolean checked = ((CheckBox) view).isChecked();
         switch (view.getId()) {
             case R.id.panic_bohemian:
                 if (checked) {
+                    Toast toast2 = Toast.makeText(MainActivity.this, R.string.PanicFact, Toast.LENGTH_LONG);
+                    toast2.setGravity(Gravity.CENTER_HORIZONTAL | Gravity.CENTER_HORIZONTAL, 0, 0);
+                    toast2.show();
                     Toast.makeText(MainActivity.this, R.string.Bonus,
                             Toast.LENGTH_SHORT).show();
                     break;
@@ -241,6 +246,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             correctAnswers += 1;
         }
         if (name.trim().equalsIgnoreCase("trumpetta")) {
+            correctAnswers += 1;
+        }
+        if (name.trim().equalsIgnoreCase("trumpeta")) {
+            correctAnswers += 1;
+        }
+        if (name.trim().equalsIgnoreCase("trumpette")) {
             correctAnswers += 1;
         }
     }
