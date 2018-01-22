@@ -248,10 +248,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (name.trim().equalsIgnoreCase("trumpetta")) {
             correctAnswers += 1;
         }
-        if (name.trim().equalsIgnoreCase("trumpeta")) {
+        if (name.trim().equalsIgnoreCase("trompeta")) {
             correctAnswers += 1;
         }
         if (name.trim().equalsIgnoreCase("trumpette")) {
+            correctAnswers += 1;
+        }
+        if (name.trim().equalsIgnoreCase("trumpeta")) {
             correctAnswers += 1;
         }
     }
