@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     /**
-     * This method starts the hint music when the hint button is clicked.
+     * This method initiates and starts the hint music when the hint button is clicked.
      */
     @Override
     public void onClick(View v) {
