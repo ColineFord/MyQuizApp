@@ -19,7 +19,7 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity {
 
     private EditText editView;
     private RadioGroup radioGroupQ1;
@@ -55,6 +55,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         submit = findViewById(R.id.submitButton);
         submit.setOnClickListener(submitButtonOnClickListener);
 
+        /**
+         * This is the methods for the hints
+         */
         final MediaPlayer Q1MP = MediaPlayer.create(this, R.raw.q1hintmusic);
         final MediaPlayer Q3MP = MediaPlayer.create(this, R.raw.q3hintmusic);
         final MediaPlayer Q4MP = MediaPlayer.create(this, R.raw.q4hintmusic);
@@ -115,12 +118,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         });
 
     }
-
-    @Override
-    public void onClick(View v) {
-        // default method for handling onClick Events..
-    }
-
 
     /**
      * This method gets the name of the player to make a personalized score message
