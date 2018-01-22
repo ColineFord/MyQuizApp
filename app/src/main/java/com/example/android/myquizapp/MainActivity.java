@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         final MediaPlayer Q2panicMP = MediaPlayer.create(this, R.raw.q2hintmusicpanic);
         final MediaPlayer Q3MP = MediaPlayer.create(this, R.raw.q3hintmusic);
         final MediaPlayer Q4MP = MediaPlayer.create(this, R.raw.q4hintmusic);
-        ImageView Q5hint  = (ImageView) findViewById(R.id.Hint_Q5image);
+        ImageView Q5hint  = findViewById(R.id.Hint_Q5image);
         final MediaPlayer Q6BeyonceMP = MediaPlayer.create(this, R.raw.q6hintbeyonce);
         final MediaPlayer Q6BocelliMP = MediaPlayer.create(this, R.raw.q6hintbocelli);
         final MediaPlayer Q7MP = MediaPlayer.create(this, R.raw.q7hintmusic);
