@@ -142,7 +142,11 @@
                         android:textAppearance="@style/QuestionHeaderStyle" />
 
                     <Button
-                        android:id="@+id/Hint_Q2"
+                    android:id="@+id/Hint_Q2"
+                    style="@style/HintButton" />
+
+                    <Button
+                        android:id="@+id/Hint_Q2Bis"
                         style="@style/HintButton" />
 
                 </LinearLayout>
@@ -306,6 +310,7 @@
 
 
             <LinearLayout
+                android:id="@+id/Q5Linear"
                 style="@style/LinearStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -335,6 +340,10 @@
                     android:layout_height="wrap_content"
                     android:text="@string/Q5text"
                     android:textAppearance="@style/QuestionStyle" />
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
 
                 <RadioGroup
                     android:id="@+id/radioGroupQ5"
@@ -368,6 +377,17 @@
 
                 </RadioGroup>
 
+                <ImageView
+                    android:id="@+id/Hint_Q5image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/q5hintimage"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/Button_Padding"
+                    android:visibility="gone"/>
+
+               </LinearLayout>
+
             </LinearLayout>
 
             <LinearLayout
@@ -394,7 +414,7 @@
                     style="@style/HintButton" />
 
                     <Button
-                        android:id="@+id/Hint_Q6bis"
+                        android:id="@+id/Hint_Q6Bis"
                         style="@style/HintButton" />
 
                 </LinearLayout>
@@ -500,6 +520,10 @@
 
                     <Button
                         android:id="@+id/Hint_Q8"
+                        style="@style/HintButton" />
+
+                    <Button
+                        android:id="@+id/Hint_Q8Bis"
                         style="@style/HintButton" />
 
                 </LinearLayout>

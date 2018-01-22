@@ -3,7 +3,9 @@ package com.example.android.myquizapp;
 import android.content.Context;
 import android.content.res.Configuration;
 import android.graphics.drawable.shapes.Shape;
+import android.media.Image;
 import android.media.MediaPlayer;
+import android.net.Uri;
 import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -14,6 +16,7 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -43,7 +46,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -60,18 +63,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
          */
         Button HintQ1 = this.findViewById(R.id.Hint_Q1);
         HintQ1.setOnClickListener(this);
+        Button HintQ2 = this.findViewById(R.id.Hint_Q2);
+        HintQ2.setOnClickListener(this);
+        Button HintQ2bis = this.findViewById(R.id.Hint_Q2Bis);
+        HintQ2bis.setOnClickListener(this);
         Button HintQ3 = this.findViewById(R.id.Hint_Q3);
         HintQ3.setOnClickListener(this);
         Button HintQ4 = this.findViewById(R.id.Hint_Q4);
         HintQ4.setOnClickListener(this);
+        Button HintQ5 = this.findViewById(R.id.Hint_Q5);
+        HintQ5.setOnClickListener(this);
         Button HintQ6Beyonce = this.findViewById(R.id.Hint_Q6);
         HintQ6Beyonce.setOnClickListener(this);
-        Button HintQ6Bocelli = this.findViewById(R.id.Hint_Q6bis);
+        Button HintQ6Bocelli = this.findViewById(R.id.Hint_Q6Bis);
         HintQ6Bocelli.setOnClickListener(this);
         Button HintQ7 = this.findViewById(R.id.Hint_Q7);
         HintQ7.setOnClickListener(this);
         Button HintQ8 = this.findViewById(R.id.Hint_Q8);
         HintQ8.setOnClickListener(this);
+        Button HintQ8Bis = this.findViewById(R.id.Hint_Q8Bis);
+        HintQ8Bis.setOnClickListener(this);
     }
 
     /**
@@ -80,16 +91,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         final MediaPlayer Q1MP = MediaPlayer.create(this, R.raw.q1hintmusic);
+        final MediaPlayer Q2queenMP = MediaPlayer.create(this, R.raw.q2hintmusicqueen);
+        final MediaPlayer Q2panicMP = MediaPlayer.create(this, R.raw.q2hintmusicpanic);
         final MediaPlayer Q3MP = MediaPlayer.create(this, R.raw.q3hintmusic);
         final MediaPlayer Q4MP = MediaPlayer.create(this, R.raw.q4hintmusic);
+        ImageView Q5hint  = (ImageView) findViewById(R.id.Hint_Q5image);
         final MediaPlayer Q6BeyonceMP = MediaPlayer.create(this, R.raw.q6hintbeyonce);
         final MediaPlayer Q6BocelliMP = MediaPlayer.create(this, R.raw.q6hintbocelli);
         final MediaPlayer Q7MP = MediaPlayer.create(this, R.raw.q7hintmusic);
-        final MediaPlayer Q8MP = MediaPlayer.create(this, R.raw.q8hintmusicweeknd);
+        final MediaPlayer Q8WeekndMP = MediaPlayer.create(this, R.raw.q8hintmusicweeknd);
+        final MediaPlayer Q8DaftPunkMP = MediaPlayer.create(this, R.raw.q8hintmusicdaftpunk);
 
         switch (v.getId()) {
             case R.id.Hint_Q1:
                 Q1MP.start();
+                break;
+            case R.id.Hint_Q2:
+                Q2queenMP.start();
+                break;
+            case R.id.Hint_Q2Bis:
+                Q2panicMP.start();
                 break;
             case R.id.Hint_Q3:
                 Q3MP.start();
@@ -97,17 +118,24 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.Hint_Q4:
                 Q4MP.start();
                 break;
+            case R.id.Hint_Q5:
+                Q5hint.setVisibility(View.VISIBLE);
+                Q5hint.setImageResource(R.drawable.q5hintimage);
+                break;
             case R.id.Hint_Q6:
                 Q6BeyonceMP.start();
                 break;
-            case R.id.Hint_Q6bis:
+            case R.id.Hint_Q6Bis:
                 Q6BocelliMP.start();
                 break;
             case R.id.Hint_Q7:
                 Q7MP.start();
                 break;
             case R.id.Hint_Q8:
-                Q8MP.start();
+                Q8WeekndMP.start();
+                break;
+            case R.id.Hint_Q8Bis:
+                Q8DaftPunkMP.start();
                 break;
             default:
                 break;
