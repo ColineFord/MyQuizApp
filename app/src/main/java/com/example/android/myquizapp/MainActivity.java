@@ -3,6 +3,7 @@ package com.example.android.myquizapp;
 import android.content.Context;
 import android.content.res.Configuration;
 import android.graphics.drawable.shapes.Shape;
+import android.media.MediaPlayer;
 import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -18,7 +19,7 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private EditText editView;
     private RadioGroup radioGroupQ1;
@@ -54,6 +55,70 @@ public class MainActivity extends AppCompatActivity {
         submit = findViewById(R.id.submitButton);
         submit.setOnClickListener(submitButtonOnClickListener);
 
+        final MediaPlayer Q1MP = MediaPlayer.create(this, R.raw.q1hintmusic);
+        final MediaPlayer Q3MP = MediaPlayer.create(this, R.raw.q3hintmusic);
+        final MediaPlayer Q4MP = MediaPlayer.create(this, R.raw.q4hintmusic);
+        final MediaPlayer Q6BeyonceMP = MediaPlayer.create(this, R.raw.q6hintbeyonce);
+        final MediaPlayer Q6BocelliMP = MediaPlayer.create(this, R.raw.q6hintbocelli);
+        final MediaPlayer Q7MP = MediaPlayer.create(this, R.raw.q7hintmusic);
+        final MediaPlayer Q8MP = MediaPlayer.create(this, R.raw.q8hintmusicweeknd);
+
+        Button HintQ1 = (Button) this.findViewById(R.id.Hint_Q1);
+        Button HintQ3 = (Button) this.findViewById(R.id.Hint_Q3);
+        Button HintQ4 = (Button) this.findViewById(R.id.Hint_Q4);
+        Button HintQ6Beyonce = (Button) this.findViewById(R.id.Hint_Q6);
+        Button HintQ6Bocelli = (Button) this.findViewById(R.id.Hint_Q6bis);
+        Button HintQ7 = (Button) this.findViewById(R.id.Hint_Q7);
+        Button HintQ8 = (Button) this.findViewById(R.id.Hint_Q8);
+
+        HintQ1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Q1MP.start();
+            }
+        });
+        HintQ3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Q3MP.start();
+            }
+        });
+        HintQ4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Q4MP.start();
+            }
+        });
+        HintQ6Beyonce.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Q6BeyonceMP.start();
+            }
+        });
+        HintQ6Bocelli.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Q6BocelliMP.start();
+            }
+        });
+        HintQ7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Q7MP.start();
+            }
+        });
+        HintQ8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Q8MP.start();
+            }
+        });
+
+    }
+
+    @Override
+    public void onClick(View v) {
+        // default method for handling onClick Events..
     }
 
 
@@ -72,9 +137,8 @@ public class MainActivity extends AppCompatActivity {
      * Answer is Shape of You
      */
     private void checkQuestionOneAnswers() {
-        RadioButton radioButtonShape = findViewById(R.id.shape_stream);
-        boolean isQuestionOneShapeChecked = radioButtonShape.isChecked();
-        if (isQuestionOneShapeChecked) {
+        RadioButton isQuestionOneShapeChecked = findViewById(R.id.shape_stream);
+        if (isQuestionOneShapeChecked.isChecked()) {
             correctAnswers += 1;
         }
     }
@@ -127,9 +191,8 @@ public class MainActivity extends AppCompatActivity {
      * Answer is Despacito
      */
     private void checkQuestionThreeAnswers() {
-        RadioButton radioButtonDespacito = (RadioButton) findViewById(R.id.desp_youtube);
-        boolean isQuestionThreeDespacitoChecked = radioButtonDespacito.isChecked();
-        if (isQuestionThreeDespacitoChecked) {
+        RadioButton isQuestionThreeDespacitoChecked = (RadioButton) findViewById(R.id.desp_youtube);
+        if (isQuestionThreeDespacitoChecked.isChecked()) {
             correctAnswers += 1;
         }
     }
@@ -168,9 +231,8 @@ public class MainActivity extends AppCompatActivity {
      * Answer is Divide
      */
     private void checkQuestionFiveAnswers() {
-        RadioButton radioButtonDivide = (RadioButton) findViewById(R.id.divide_sheeran);
-        boolean isQuestionFiveDivideChecked = radioButtonDivide.isChecked();
-        if (isQuestionFiveDivideChecked) {
+        RadioButton isQuestionFiveDivideChecked = (RadioButton) findViewById(R.id.divide_sheeran);
+        if (isQuestionFiveDivideChecked.isChecked()) {
             correctAnswers += 1;
         }
     }

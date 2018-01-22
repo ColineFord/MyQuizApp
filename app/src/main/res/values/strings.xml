@@ -68,4 +68,6 @@
     <string name="YouWonToast">YOU WON! %1$s, you have %2$d correct answers out of 11!</string>
     <string name="TryAgainToast">TRY AGAIN! %1$s, you have %2$d correct answers out of 11!</string>
 
+    <string name="HintButton">Hint</string>
+
 </resources>
