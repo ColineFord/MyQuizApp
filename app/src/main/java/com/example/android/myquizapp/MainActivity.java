@@ -19,7 +19,7 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private EditText editView;
     private RadioGroup radioGroupQ1;
@@ -56,8 +56,29 @@ public class MainActivity extends AppCompatActivity {
         submit.setOnClickListener(submitButtonOnClickListener);
 
         /**
-         * This is the methods for the hints
+         * This line initiates the hint buttons
          */
+        Button HintQ1 = this.findViewById(R.id.Hint_Q1);
+        HintQ1.setOnClickListener(this);
+        Button HintQ3 = this.findViewById(R.id.Hint_Q3);
+        HintQ3.setOnClickListener(this);
+        Button HintQ4 = this.findViewById(R.id.Hint_Q4);
+        HintQ4.setOnClickListener(this);
+        Button HintQ6Beyonce = this.findViewById(R.id.Hint_Q6);
+        HintQ6Beyonce.setOnClickListener(this);
+        Button HintQ6Bocelli = this.findViewById(R.id.Hint_Q6bis);
+        HintQ6Bocelli.setOnClickListener(this);
+        Button HintQ7 = this.findViewById(R.id.Hint_Q7);
+        HintQ7.setOnClickListener(this);
+        Button HintQ8 = this.findViewById(R.id.Hint_Q8);
+        HintQ8.setOnClickListener(this);
+    }
+
+    /**
+     * This method starts the hint music when the hint button is clicked.
+     */
+    @Override
+    public void onClick(View v) {
         final MediaPlayer Q1MP = MediaPlayer.create(this, R.raw.q1hintmusic);
         final MediaPlayer Q3MP = MediaPlayer.create(this, R.raw.q3hintmusic);
         final MediaPlayer Q4MP = MediaPlayer.create(this, R.raw.q4hintmusic);
@@ -66,57 +87,31 @@ public class MainActivity extends AppCompatActivity {
         final MediaPlayer Q7MP = MediaPlayer.create(this, R.raw.q7hintmusic);
         final MediaPlayer Q8MP = MediaPlayer.create(this, R.raw.q8hintmusicweeknd);
 
-        Button HintQ1 = (Button) this.findViewById(R.id.Hint_Q1);
-        Button HintQ3 = (Button) this.findViewById(R.id.Hint_Q3);
-        Button HintQ4 = (Button) this.findViewById(R.id.Hint_Q4);
-        Button HintQ6Beyonce = (Button) this.findViewById(R.id.Hint_Q6);
-        Button HintQ6Bocelli = (Button) this.findViewById(R.id.Hint_Q6bis);
-        Button HintQ7 = (Button) this.findViewById(R.id.Hint_Q7);
-        Button HintQ8 = (Button) this.findViewById(R.id.Hint_Q8);
-
-        HintQ1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.Hint_Q1:
                 Q1MP.start();
-            }
-        });
-        HintQ3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+                break;
+            case R.id.Hint_Q3:
                 Q3MP.start();
-            }
-        });
-        HintQ4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+                break;
+            case R.id.Hint_Q4:
                 Q4MP.start();
-            }
-        });
-        HintQ6Beyonce.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+                break;
+            case R.id.Hint_Q6:
                 Q6BeyonceMP.start();
-            }
-        });
-        HintQ6Bocelli.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+                break;
+            case R.id.Hint_Q6bis:
                 Q6BocelliMP.start();
-            }
-        });
-        HintQ7.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+                break;
+            case R.id.Hint_Q7:
                 Q7MP.start();
-            }
-        });
-        HintQ8.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+                break;
+            case R.id.Hint_Q8:
                 Q8MP.start();
-            }
-        });
-
+                break;
+            default:
+                break;
+        }
     }
 
     /**
@@ -188,7 +183,7 @@ public class MainActivity extends AppCompatActivity {
      * Answer is Despacito
      */
     private void checkQuestionThreeAnswers() {
-        RadioButton isQuestionThreeDespacitoChecked = (RadioButton) findViewById(R.id.desp_youtube);
+        RadioButton isQuestionThreeDespacitoChecked = findViewById(R.id.desp_youtube);
         if (isQuestionThreeDespacitoChecked.isChecked()) {
             correctAnswers += 1;
         }
@@ -201,7 +196,7 @@ public class MainActivity extends AppCompatActivity {
      * Answer is Trumpet
      */
     private String getQuestionFourUserInput() {
-        EditText userInputAnswerQuestion4 = (EditText) findViewById(R.id.Trumpet);
+        EditText userInputAnswerQuestion4 = findViewById(R.id.Trumpet);
         String answerQ4 = userInputAnswerQuestion4.getText().toString();
         return answerQ4;
     }
@@ -228,7 +223,7 @@ public class MainActivity extends AppCompatActivity {
      * Answer is Divide
      */
     private void checkQuestionFiveAnswers() {
-        RadioButton isQuestionFiveDivideChecked = (RadioButton) findViewById(R.id.divide_sheeran);
+        RadioButton isQuestionFiveDivideChecked = findViewById(R.id.divide_sheeran);
         if (isQuestionFiveDivideChecked.isChecked()) {
             correctAnswers += 1;
         }
@@ -263,7 +258,7 @@ public class MainActivity extends AppCompatActivity {
      * Answer is ZAYN
      */
     private String getQuestionSevenUserInput() {
-        EditText userInputAnswerQuestion7 = (EditText) findViewById(R.id.DuskZayn);
+        EditText userInputAnswerQuestion7 = findViewById(R.id.DuskZayn);
         String answerQ7 = userInputAnswerQuestion7.getText().toString();
         return answerQ7;
     }
