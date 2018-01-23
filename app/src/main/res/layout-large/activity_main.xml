@@ -63,12 +63,23 @@
                 android:padding="@dimen/Linear_Padding"
                 android:gravity="center_horizontal">
 
-                <TextView
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/QMarginBottom"
-                    android:text="@string/Q1"
-                    android:textAppearance="@style/QuestionHeaderStyle" />
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/QMarginBottom"
+                        android:text="@string/Q1"
+                        android:textAppearance="@style/QuestionHeaderStyle" />
+
+                    <Button
+                        android:id="@+id/Hint_Q1"
+                        style="@style/HintButton" />
+
+                </LinearLayout>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -130,12 +141,26 @@
                 android:padding="@dimen/Linear_Padding"
                 android:gravity="center_horizontal">
 
-                <TextView
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/QMarginBottom"
-                    android:text="@string/Q2"
-                    android:textAppearance="@style/QuestionHeaderStyle" />
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/QMarginBottom"
+                        android:text="@string/Q2"
+                        android:textAppearance="@style/QuestionHeaderStyle" />
+
+                    <Button
+                        android:id="@+id/Hint_Q2"
+                        style="@style/HintButton" />
+                    <Button
+                        android:id="@+id/Hint_Q2Bis"
+                        style="@style/HintButton" />
+
+                </LinearLayout>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -198,12 +223,22 @@
                 android:padding="@dimen/Linear_Padding"
                 android:gravity="center_horizontal">
 
-                <TextView
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/QMarginBottom"
-                    android:text="@string/Q3"
-                    android:textAppearance="@style/QuestionHeaderStyle" />
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/QMarginBottom"
+                        android:text="@string/Q3"
+                        android:textAppearance="@style/QuestionHeaderStyle" />
+
+                    <Button
+                        android:id="@+id/Hint_Q3"
+                        style="@style/HintButton" />
+                </LinearLayout>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -267,12 +302,23 @@
                 android:padding="@dimen/Linear_Padding"
                 android:gravity="center_horizontal">
 
-                <TextView
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/QMarginBottom"
-                    android:text="@string/Q4"
-                    android:textAppearance="@style/QuestionHeaderStyle" />
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/QMarginBottom"
+                        android:text="@string/Q4"
+                        android:textAppearance="@style/QuestionHeaderStyle" />
+
+                    <Button
+                        android:id="@+id/Hint_Q4"
+                        style="@style/HintButton" />
+
+                </LinearLayout>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -299,18 +345,35 @@
                 android:padding="@dimen/Linear_Padding"
                 android:gravity="center_horizontal">
 
-                <TextView
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/QMarginBottom"
-                    android:text="@string/Q5"
-                    android:textAppearance="@style/QuestionHeaderStyle" />
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/QMarginBottom"
+                        android:text="@string/Q5"
+                        android:textAppearance="@style/QuestionHeaderStyle" />
+
+                    <Button
+                        android:id="@+id/Hint_Q5"
+                        style="@style/HintButton" />
+
+                </LinearLayout>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/Q5text"
                     android:textAppearance="@style/QuestionStyle" />
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   android:gravity="center_horizontal">
 
                 <RadioGroup
                     android:id="@+id/radioGroupQ5"
@@ -348,6 +411,18 @@
 
                 </RadioGroup>
 
+                <ImageView
+                    android:id="@+id/Hint_Q5image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/q5hintimage"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/Button_Padding"
+                    android:visibility="gone"
+                    android:layout_gravity="center_horizontal"/>
+
+               </LinearLayout>
+
             </LinearLayout>
 
             <LinearLayout
@@ -359,12 +434,26 @@
                 android:padding="@dimen/Linear_Padding"
                 android:gravity="center_horizontal">
 
-                <TextView
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/QMarginBottom"
-                    android:text="@string/Q6"
-                    android:textAppearance="@style/QuestionHeaderStyle" />
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/QMarginBottom"
+                        android:text="@string/Q6"
+                        android:textAppearance="@style/QuestionHeaderStyle" />
+
+                    <Button
+                        android:id="@+id/Hint_Q6"
+                        style="@style/HintButton" />
+                    <Button
+                        android:id="@+id/Hint_Q6Bis"
+                        style="@style/HintButton" />
+
+                </LinearLayout>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -424,12 +513,23 @@
                 android:padding="@dimen/Linear_Padding"
                 android:gravity="center_horizontal">
 
-                <TextView
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/QMarginBottom"
-                    android:text="@string/Q7"
-                    android:textAppearance="@style/QuestionHeaderStyle" />
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/QMarginBottom"
+                        android:text="@string/Q7"
+                        android:textAppearance="@style/QuestionHeaderStyle" />
+
+                    <Button
+                        android:id="@+id/Hint_Q7"
+                        style="@style/HintButton" />
+
+                </LinearLayout>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -456,12 +556,26 @@
                 android:padding="@dimen/Linear_Padding"
                 android:gravity="center_horizontal">
 
-                <TextView
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/QMarginBottom"
-                    android:text="@string/Q8"
-                    android:textAppearance="@style/QuestionHeaderStyle" />
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/QMarginBottom"
+                        android:text="@string/Q8"
+                        android:textAppearance="@style/QuestionHeaderStyle" />
+
+                    <Button
+                        android:id="@+id/Hint_Q8"
+                        style="@style/HintButton" />
+                    <Button
+                        android:id="@+id/Hint_Q8Bis"
+                        style="@style/HintButton" />
+
+                </LinearLayout>
 
                 <TextView
                     android:layout_width="wrap_content"
