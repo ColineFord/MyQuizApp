@@ -171,19 +171,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      * Answer is Queen, and also Panic At The Disco which is a bonus point
      */
     private void checkQuestionTwoAnswers() {
-        CheckBox questionTwoBeatles = findViewById(R.id.beatles_bohemian);
-        CheckBox questionTwoQueen = findViewById(R.id.queen_bohemian);
-        CheckBox questionTwoU2 = findViewById(R.id.u2_bohemian);
-        CheckBox questionTwoPanic = findViewById(R.id.panic_bohemian);
-        boolean isQuestionTwoBeatlesChecked = questionTwoBeatles.isChecked();
-        boolean isQuestionTwoQueenChecked = questionTwoQueen.isChecked();
-        boolean isQuestionTwoU2Checked = questionTwoU2.isChecked();
-        boolean isQuestionTwoPanicChecked = questionTwoPanic.isChecked();
+        CheckBox isQuestionTwoBeatlesChecked = findViewById(R.id.beatles_bohemian);
+        CheckBox isQuestionTwoQueenChecked = findViewById(R.id.queen_bohemian);
+        CheckBox isQuestionTwoU2Checked = findViewById(R.id.u2_bohemian);
+        CheckBox isQuestionTwoPanicChecked = findViewById(R.id.panic_bohemian);
 
-        if (isQuestionTwoQueenChecked) {
+        if (isQuestionTwoQueenChecked.isChecked()) {
             correctAnswers += 1;
         }
-        if (isQuestionTwoPanicChecked) {
+        if (isQuestionTwoPanicChecked.isChecked()) {
             correctAnswers += 1;
         }
     }
@@ -236,25 +232,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void checkQuestionFourAnswers() {
         String name = getQuestionFourUserInput();
+
         if (name.trim().equalsIgnoreCase("trumpet")) {
             correctAnswers += 1;
-        }
-        if (name.trim().equalsIgnoreCase("trompet")) {
+        } else if (name.trim().equalsIgnoreCase("trompet")) {
             correctAnswers += 1;
-        }
-        if (name.trim().equalsIgnoreCase("trompette")) {
+        } else if (name.trim().equalsIgnoreCase("trompette")) {
             correctAnswers += 1;
-        }
-        if (name.trim().equalsIgnoreCase("trumpetta")) {
+        } else if (name.trim().equalsIgnoreCase("trumpetta")) {
             correctAnswers += 1;
-        }
-        if (name.trim().equalsIgnoreCase("trompeta")) {
+        } else if (name.trim().equalsIgnoreCase("trompeta")) {
             correctAnswers += 1;
-        }
-        if (name.trim().equalsIgnoreCase("trumpette")) {
+        }else if (name.trim().equalsIgnoreCase("trumpette")) {
             correctAnswers += 1;
-        }
-        if (name.trim().equalsIgnoreCase("trumpeta")) {
+        } else if (name.trim().equalsIgnoreCase("trumpeta")) {
             correctAnswers += 1;
         }
     }
@@ -277,19 +268,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      * Answer is Andrea Bocelli & Beyonce.
      */
     private void checkQuestionSixAnswers() {
-        CheckBox questionSixTaylor = findViewById(R.id.perfect_taylor);
-        CheckBox questionSixBocelli = findViewById(R.id.perfect_bocelli);
-        CheckBox questionSixBeyonce = findViewById(R.id.perfect_beyonce);
-        CheckBox questionSixEminem = findViewById(R.id.perfect_eminem);
-        boolean isQuestionSixTaylorChecked = questionSixTaylor.isChecked();
-        boolean isQuestionSixBocelliChecked = questionSixBocelli.isChecked();
-        boolean isQuestionSixBeyonceChecked = questionSixBeyonce.isChecked();
-        boolean isQuestionSixEminemChecked = questionSixEminem.isChecked();
+        CheckBox isQuestionSixTaylorChecked = findViewById(R.id.perfect_taylor);
+        CheckBox isQuestionSixBocelliChecked = findViewById(R.id.perfect_bocelli);
+        CheckBox isQuestionSixBeyonceChecked = findViewById(R.id.perfect_beyonce);
+        CheckBox isQuestionSixEminemChecked = findViewById(R.id.perfect_eminem);
 
-        if (isQuestionSixBocelliChecked) {
+        if (isQuestionSixBocelliChecked.isChecked()) {
             correctAnswers += 1;
         }
-        if (isQuestionSixBeyonceChecked) {
+        if (isQuestionSixBeyonceChecked.isChecked()) {
             correctAnswers += 1;
         }
     }
@@ -321,19 +308,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      * Answer is Daft Punk and The Weeknd
      */
     private void checkQuestionEightAnswers() {
-        CheckBox questionEightDaft = findViewById(R.id.daft_starboy);
-        CheckBox questionEightDrake = findViewById(R.id.drake_starboy);
-        CheckBox questionEightWeeknd = findViewById(R.id.weeknd_starboy);
-        CheckBox questionEightKendrick = findViewById(R.id.kendrick_starboy);
-        boolean isQuestionEightDaftChecked = questionEightDaft.isChecked();
-        boolean isQuestionEightDrakeChecked = questionEightDrake.isChecked();
-        boolean isQuestionEightWeekndChecked = questionEightWeeknd.isChecked();
-        boolean isQuestionEightKendrickChecked = questionEightKendrick.isChecked();
+        CheckBox isQuestionEightDaftChecked = findViewById(R.id.daft_starboy);
+        CheckBox isQuestionEightDrakeChecked = findViewById(R.id.drake_starboy);
+        CheckBox isQuestionEightWeekndChecked = findViewById(R.id.weeknd_starboy);
+        CheckBox isQuestionEightKendrickChecked = findViewById(R.id.kendrick_starboy);
 
-        if (isQuestionEightDaftChecked) {
+        if (isQuestionEightDaftChecked.isChecked()) {
             correctAnswers += 1;
         }
-        if (isQuestionEightWeekndChecked) {
+        if (isQuestionEightWeekndChecked.isChecked()) {
             correctAnswers += 1;
         }
     }
