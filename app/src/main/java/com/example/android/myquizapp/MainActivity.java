@@ -296,8 +296,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         String name = getQuestionSevenUserInput();
         if (name.trim().equalsIgnoreCase("ZAYN")) {
             correctAnswers += 1;
-        }
-        if (name.trim().equalsIgnoreCase("ZAIN")) {
+        }else if (name.trim().equalsIgnoreCase("ZAIN")) {
             correctAnswers += 1;
         }
     }
